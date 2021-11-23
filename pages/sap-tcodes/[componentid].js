@@ -32,7 +32,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = { name: 'you are awesome' };
+  const name = 'you are awesome' + params.componentid;
+  const postData = { name: name };
   return {
     props: postData,
   };
