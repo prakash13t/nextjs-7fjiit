@@ -7,7 +7,7 @@ import Sappackage from '../components/sappackages';
 import Searchbox from '../components/searchbox';
 export default function Saptcodes() {
   const meta = {
-    title: 'Speakers - Virtual Event Starter Kit',
+    title: 'SAP Tables',
     description: META_DESCRIPTION,
   };
   return (
