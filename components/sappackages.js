@@ -8,7 +8,7 @@ export default function Sappackage() {
           <tr className="border bg-indigo-900 text-white">
             <th className="border px-4 py-2 w-4">#</th>
             <th className="border px-4 py-2 text-left">
-              SAP Transaction Codes by Package
+              SAP TCodes by Package
             </th>
           </tr>
         </thead>
