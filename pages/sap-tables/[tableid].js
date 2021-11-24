@@ -1,13 +1,13 @@
-import { META_DESCRIPTION } from '../../lib/constants';
 import Page from '../../components/page';
 import Layout from '../../components/layout';
 import Header from '../../components/header';
+import Tcodedetails from '../../components/tcodedetails';
 import { useRouter } from 'next/router';
 
 export default function Saptable(postData) {
   const meta = {
-    title: 'Speakers - Virtual Event Starter Kit',
-    description: META_DESCRIPTION,
+    title: 'EKKO Table',
+    description: 'Meta of table id',
   };
   const router = useRouter();
   console.log(postData.postData);
@@ -15,6 +15,7 @@ export default function Saptable(postData) {
     <Page meta={meta}>
       <Layout>
         <Header hero={postData.name} description={meta.description} />
+        <Tcodedetails />
       </Layout>
     </Page>
   );

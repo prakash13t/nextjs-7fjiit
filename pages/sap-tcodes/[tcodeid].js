@@ -1,13 +1,13 @@
-import { META_DESCRIPTION } from '../../lib/constants';
 import Page from '../../components/page';
 import Layout from '../../components/layout';
 import Header from '../../components/header';
+import Tcodedetails from '../../components/tcodedetails';
 import { useRouter } from 'next/router';
 
 export default function Saptcodes(postData) {
   const meta = {
-    title: 'Speakers - Virtual Event Starter Kit',
-    description: META_DESCRIPTION,
+    title: 'SAP Tcode',
+    description: 'Meta description of tcode',
   };
   const router = useRouter();
   console.log(postData.postData);
@@ -15,6 +15,7 @@ export default function Saptcodes(postData) {
     <Page meta={meta}>
       <Layout>
         <Header hero={postData.name} description={meta.description} />
+        <Tcodedetails />
       </Layout>
     </Page>
   );
@@ -23,9 +24,9 @@ export default function Saptcodes(postData) {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { componentid: 'FI' } },
-      { params: { componentid: 'LO' } },
-      { params: { componentid: 'BC' } },
+      { params: { tcodeid: 'FI' } },
+      { params: { tcodeid: 'LO' } },
+      { params: { tcodeid: 'BC' } },
     ],
     fallback: false,
   };
