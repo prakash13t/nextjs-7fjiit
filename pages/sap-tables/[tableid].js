@@ -24,9 +24,9 @@ export default function Saptable(postData) {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { componentid: 'FI' } },
-      { params: { componentid: 'LO' } },
-      { params: { componentid: 'BC' } },
+      { params: { tableid: 'FI' } },
+      { params: { tableid: 'LO' } },
+      { params: { tableid: 'BC' } },
     ],
     fallback: false,
   };
